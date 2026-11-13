@@ -1,0 +1,94 @@
+:host {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* ---------- Formulario ---------- */
+.formulario {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.formulario input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px 14px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulario input:focus {
+  border-color: #f2b705;
+  box-shadow: 0 0 0 3px rgba(242, 183, 5, 0.25);
+}
+
+.formulario button {
+  padding: 10px 24px;
+  background: #f2b705;
+  color: #3b3b3b;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.formulario button:hover {
+  background: #d9a404;
+}
+
+.formulario button:active {
+  transform: scale(0.97);
+}
+
+/* ---------- Tarjetas ---------- */
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta {
+  background: #fff9c4;
+  padding: 18px 20px;
+  border-radius: 4px 4px 14px 4px;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px) rotate(-1deg);
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta h3 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  color: #3b3b3b;
+}
+
+.tarjeta p {
+  margin: 0;
+  line-height: 1.5;
+  color: #555;
+  word-wrap: break-word;
+}

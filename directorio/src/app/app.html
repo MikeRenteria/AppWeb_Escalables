@@ -1,14 +1,13 @@
-<h1>Directorio ({{ totalUsers() }} usuario(s))</h1>
-<app-controls (orderByIdClick)="orderById()" (orderByNameClick)="orderByName()" (reverse)="reverse()"></app-controls>
+<nav>
+    <div class="navbar-brand">
+        <span>Mi Aplicacion</span>
+    </div>
 
-<div class="container">
+    <ul>
+        <li><a href="#" class="nav-item active">Home</a></li>
+        <li><a href="#" class="nav-item">Contact</a></li>
+        <li><a href="#" class="nav-item">About</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
 
-
-  @for (user of users(); track $index) {
-    <app-user-card [user]="user" (deleteUser)="removeUser($event)"></app-user-card>
-  } @empty {
-    <p class="empty-msg">No hay usuarios en el Directorio</p>
-  }
-
-  
-</div>
